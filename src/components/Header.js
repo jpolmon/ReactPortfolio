@@ -2,9 +2,9 @@ import React from 'react';
 import '../styles/reset.css';
 import '../styles/style.css';
 
-let aboutMe = '#about-me';
-let work = '#work';
-let contact = '#contact-me';
+let aboutMe = '#about-me-anchor';
+let work = '#work-anchor';
+let contact = '#contact-me-anchor';
 let resume = 'https://docs.google.com/document/d/1JwlKGPARHpQ0AW21FeEikw3oWNy3YIB53G2EzriqCxA/edit?usp=sharing'
 
 export default function Header() {

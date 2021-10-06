@@ -5,6 +5,7 @@ import '../styles/style.css';
 export default function Projects() {
     return (
         <section id="work">
+            <span class="anchor" id="work-anchor"></span>
             <h2>Work</h2>
             <section class="projects">
                 <ul>

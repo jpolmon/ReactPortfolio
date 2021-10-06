@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,9 @@ body {
 header {
     display: flex;
     flex-shrink: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
     width: 100%;
     float: left;
     justify-content: space-between;
@@ -71,6 +75,7 @@ header a:hover {
     height: 175px;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-top: 100px;
 }
 
 .sub-header h2 {
@@ -82,7 +87,19 @@ header a:hover {
     background-color: var(--headerSecondColor);
 }
 
+.anchor {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: -100px;
+    left: 0;
+    visibility: hidden;
+}
+
 section {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -196,7 +213,7 @@ section {
 }
 
 .projects a .soon {
-    visibility: hidden;
+    opacity: 0;
     width: 100px;
     padding: 10px; 
     left: 50%;
@@ -210,17 +227,24 @@ section {
 }
 
 .projects a:hover .soon {
-    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .projects .repo {
+    opacity: 0;
     color: var(--headerThemeColor);
     background-color: var(--headerSecondColor);
     padding: 5px;
     border-radius: 3px;
     margin-bottom: -30px;
     border: solid var(--headerThemeColor);
+    z-index: 1;
 }
+
 
 .projects .repo-left {
     margin-right: 85px;
@@ -228,6 +252,14 @@ section {
 
 .projects .repo-right {
     margin-left: 85px;
+}
+
+.projects a:hover ~ .repo {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 #contact-me {
@@ -301,11 +333,23 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 158px;
         background-image: url(../assets/images/Header-image.png);
     }
 
     .sub-header h2 {
         margin: 0;
+    }
+
+    .anchor {
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        z-index: -1;
+        top: -158px;
+        left: 0;
+        visibility: hidden;
     }
 
     section {
