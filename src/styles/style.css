@@ -1,0 +1,391 @@
+:root{
+    --headerThemeColor: rgb(5, 37, 43);
+    --headerSecondColor: rgb(0, 150, 167);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+body {
+    min-width: 657px;
+}
+
+header {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    float: left;
+    justify-content: space-between;
+    background-color: var(--headerThemeColor);    
+}
+
+header h2 {
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: var(--headerThemeColor);
+    background-color: var(--headerSecondColor);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;    
+}
+
+header li {
+    margin-right: 20px;    
+    align-items: center;
+    border-bottom: 3px solid;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+    color: var(--headerSecondColor);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--headerSecondColor);
+}
+
+header a:hover {
+    color: white;
+}
+
+.sub-header{
+    display: flex;
+    width: 100%;
+    float: left;
+    background-image: url(../assets/images/Header-image.png);
+    background-size: cover;
+    height: 175px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.sub-header h2 {
+    margin-right: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: var(--headerThemeColor);
+    background-color: var(--headerSecondColor);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#about-me h2 {
+    border-right: 3px solid;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    padding: 15px;
+    width: 25%;
+    text-align: right;
+    font-size: 50px;
+    color: var(--headerThemeColor);
+}
+
+.about-me-body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 75%;
+}
+
+.about-me-body img {
+    align-self: center;
+    max-width: 400px;
+    margin-top: 70px;    
+}
+
+.about-me-body p {
+    margin-top: 70px;
+    padding-left: 30px;
+    padding-right: 50px;
+    line-height: 20px;
+    color: var(--headerThemeColor);   
+}
+
+#rec {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+#work h2 {
+    border-right: 3px solid;
+    width: 25%;
+    margin-top: 50px;
+    padding: 15px;
+    font-size: 50px;
+    color: var(--headerThemeColor);
+    text-align: right;    
+}
+
+#work .projects {
+    width: 75%;
+    display: flex;    
+}
+
+#work .projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#work a {
+    position: relative;
+    text-decoration: none;
+}
+
+#work img {
+    border: solid var(--headerThemeColor);
+    border-radius: 3px;
+}
+
+.project-1 {
+    width: 90%;
+    margin-left: 3%;
+    margin-right: 6%;
+    margin-bottom: 2%;
+    margin-top: 70px;    
+}
+
+.project-2 {
+    width: 45%;
+    text-align: right;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+.project-3 {
+    width: 44%;
+    text-align: left;
+    margin-left: 1%;
+    
+}
+
+.project-4 {
+    width: 45%;
+    text-align: right;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 30px;
+}
+
+.project-5 {
+    width: 44%;
+    text-align: left;
+    margin-left: 1%;   
+    margin-top: 2%;
+    margin-bottom: 30px;
+}
+
+.projects a .soon {
+    visibility: hidden;
+    width: 100px;
+    padding: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: var(--headerSecondColor);
+    color: var(--headerThemeColor);
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.projects a:hover .soon {
+    visibility: visible;
+}
+
+.projects .repo {
+    color: var(--headerThemeColor);
+    background-color: var(--headerSecondColor);
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: -30px;
+    border: solid var(--headerThemeColor);
+}
+
+.projects .repo-left {
+    margin-right: 85px;
+}
+
+.projects .repo-right {
+    margin-left: 85px;
+}
+
+#contact-me {
+    align-items: center;
+}
+
+#contact-me h2 {
+    border-right: 3px solid;
+    width: 25%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 15px;
+    font-size: 50px;
+    color: var(--headerThemeColor);
+    text-align: right;
+}
+
+#contact-me ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    padding-left: 65px;
+}
+
+#contact-me li {
+    margin-right: 20px;    
+    align-items: center;
+    border-bottom: 3px solid var(--headerThemeColor);;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+#contact-me a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--headerThemeColor);
+}
+
+#contact-me a:hover {
+    color: black;
+}
+
+@media screen and (max-width: 991px) {
+
+    body{
+        min-width: 991px;
+    }
+    
+    header {
+        
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    header h2 {
+        padding: 5px;
+    }
+
+    header ul {
+        padding-bottom: 10px;
+    }
+
+    header li {
+        margin: 5px;
+    }
+
+    .sub-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../assets/images/Header-image.png);
+    }
+
+    .sub-header h2 {
+        margin: 0;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-me h2 {
+        border-right: 0;
+        border-bottom: 3px solid;
+        width: 50%;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #work h2 {
+        border-right: 0;
+        border-bottom: 3px solid;
+        width: 50%;
+        text-align: center;
+        font-size: 50px;    
+    }
+
+    .project-1 {
+        width: 96%;
+        text-align: center;
+        margin: 2%;
+    }
+
+    .project-2 {
+        width: 96%;
+        text-align: center;
+        margin: 2%;
+    }
+    
+    .project-3 {
+        width: 96%;
+        text-align: center;
+        margin: 2%;
+    }
+    
+    .project-4 {
+        width: 96%;
+        text-align: center;
+        margin: 2%;
+    }
+    
+    .project-5 {
+        width: 96%;
+        text-align: center;
+        margin: 2%;
+    }
+
+    #work .project .repo-left {
+        margin-right: 0;
+    }
+    
+    #work .project .repo-right {
+        margin-left: 0;
+    }
+
+    #contact-me h2 {
+        border-right: 0;
+        border-bottom: 3px solid;
+        width: 50%;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 20px;    
+    }
+
+    #contact-me ul {
+        display: inline-block;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    #contact-me li {
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+
