@@ -7,22 +7,22 @@ let work = '#work-anchor';
 let contact = '#contact-me-anchor';
 let resume = 'https://docs.google.com/document/d/1JwlKGPARHpQ0AW21FeEikw3oWNy3YIB53G2EzriqCxA/edit?usp=sharing'
 
-export default function Header({ handlePageChange  }) {
+export default function Header() {
 
     return (
         <div>
             <header>
-                <h2>Jonathan Olmon</h2>
+                <h2>Jonathan Olmon</h2>        
                 <nav>   
                     <ul>
                         <li> 
-                            <a href={aboutMe} onClick={() => handlePageChange('AboutMe')}>About Me</a>
+                            <a href={aboutMe}>About Me</a>
                         </li>
                         <li>
-                            <a href={work} onClick={() => handlePageChange('Projects')}>Projects</a>
+                            <a href={work}>Projects</a>
                         </li>
                         <li>
-                            <a href={contact} onClick={() => handlePageChange('ContactMe')}>Contact Me</a>
+                            <a href={contact}>Contact Me</a>
                         </li>
                         <li>
                             <a href={resume} target="_blank" rel="noreferrer">Resume</a>
