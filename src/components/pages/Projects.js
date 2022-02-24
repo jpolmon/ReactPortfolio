@@ -21,7 +21,7 @@ export default function Projects() {
                     </li>
                     {/* War Helper */}
                     <li className="project-2 project">
-                        <a href="https://warhelperyaxche.herokuapp.com/" target="_blank" rel="noreferrer"><img src={project2} alt="war helper project"/><span className="soon">War Helper</span></a><br/><a className="repo repo-left" href="https://github.com/JeffM33/WarHelper" target="_blank" rel="noreferrer">Go to Repository</a>
+                        <a href="https://new-world-war-helper.herokuapp.com/" target="_blank" rel="noreferrer"><img src={project2} alt="war helper project"/><span className="soon">War Helper</span></a><br/><a className="repo repo-left" href="https://github.com/JeffM33/WarHelper" target="_blank" rel="noreferrer">Go to Repository</a>
                     </li>
                     {/* Website Homepage */}
                     <li className="project-3 project">
